@@ -11,5 +11,5 @@ jobs:
       - run: npm ci
       - run: npm run lint && npm run typecheck && npm run test:coverage
       - run: npm run build && npm run demo && npm run package
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with: { name: release-assets, path: dist-release/* }
