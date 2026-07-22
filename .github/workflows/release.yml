@@ -1,0 +1,15 @@
+name: Release
+on: { push: { tags: ['v*'] } }
+permissions: { contents: write }
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm run lint && npm run typecheck && npm run test:coverage
+      - run: npm run build && npm run demo && npm run package
+      - uses: actions/upload-artifact@v4
+        with: { name: release-assets, path: dist-release/* }

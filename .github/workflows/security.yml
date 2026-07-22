@@ -1,0 +1,13 @@
+name: Security
+on: { push: { branches: [main] }, pull_request: {}, schedule: [{ cron: '17 3 * * 1' }] }
+permissions: { contents: read }
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm audit --audit-level=high
+      - run: "! git grep -nEi 'AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{36}|BEGIN (RSA|OPENSSH) PRIVATE KEY'"
