@@ -1,0 +1,17 @@
+{
+  "id": "north-south", "name": "North–South Line (synthetic)", "mode": "rail", "capacity": 180, "distanceKm": 23.1, "travelMinutesBetweenStops": 3,
+  "stops": [
+    { "id": "r1", "name": "North Gate", "x": 121.40, "y": 31.28, "demandPerHour": 120 },
+    { "id": "r2", "name": "Lake", "x": 121.405, "y": 31.275, "demandPerHour": 180 },
+    { "id": "r3", "name": "University", "x": 121.41, "y": 31.27, "demandPerHour": 220 },
+    { "id": "r4", "name": "Civic", "x": 121.415, "y": 31.265, "demandPerHour": 260 },
+    { "id": "r5", "name": "Central", "x": 121.42, "y": 31.26, "demandPerHour": 310 },
+    { "id": "r6", "name": "Garden", "x": 121.425, "y": 31.255, "demandPerHour": 210 },
+    { "id": "r7", "name": "Works", "x": 121.43, "y": 31.25, "demandPerHour": 240 },
+    { "id": "r8", "name": "River", "x": 121.435, "y": 31.245, "demandPerHour": 170 },
+    { "id": "r9", "name": "South Park", "x": 121.44, "y": 31.24, "demandPerHour": 190 },
+    { "id": "r10", "name": "Depot", "x": 121.445, "y": 31.235, "demandPerHour": 140 },
+    { "id": "r11", "name": "Terminal East", "x": 121.45, "y": 31.23, "demandPerHour": 90 },
+    { "id": "r12", "name": "Terminal South", "x": 121.455, "y": 31.225, "demandPerHour": 70 }
+  ]
+}
