@@ -1,0 +1,20 @@
+# Public repository competitor scan
+
+Scan date: 2026-07-22. Searches used GitHub CLI for the exact display name, exact slug, `transit simulation`, and `transit simulation visualization GTFS`. The exact display name and slug searches found no same-name active project. The following are the ten most relevant results reviewed; stars and update timestamps are snapshots from the scan.
+
+| Repository | Stars | Updated (UTC) | Main function | Overlap and distinction |
+| --- | ---: | --- | --- | --- |
+| [a-b-street/abstreet](https://github.com/a-b-street/abstreet) | 8,149 | 2026-07-20 | Large transport-planning simulation | Broader city and policy simulator; this project is a small, browser-local reliability lab with inspectable rules. |
+| [vasile/transit-map](https://github.com/vasile/transit-map) | 371 | 2026-07-08 | Transit-map simulation client/server | Shares map visualization; this project adds capacity, queues, energy proxy and controlled disruptions. |
+| [asdfghj1237890/mini-macau](https://github.com/asdfghj1237890/mini-macau) | 623 | 2026-07-22 | 3D Macau transport visualization | Uses a place-specific visualization; Transit Pulse ships only synthetic, offline line fixtures. |
+| [pranavrc/transit](https://github.com/pranavrc/transit) | 58 | 2025-03-22 | Client schedule-driven transit simulation | Closest technical neighbor; Transit Pulse focuses on a documented decision comparison and deterministic disruption experiments. |
+| [akhani/FAST-TrIPs](https://github.com/akhani/FAST-TrIPs) | 6 | 2023-10-26 | Transit/intermodal passenger assignment | Research-scale assignment tool; this is an educational single-line sandbox. |
+| [dssg/cta-sim](https://github.com/dssg/cta-sim) | 22 | 2025-01-13 | Chicago crowding simulation | Similar crowding concern; this project does not use real agency data and runs fully offline. |
+| [OpenFlow-X/WardhaMetroFlow](https://github.com/OpenFlow-X/WardhaMetroFlow) | 16 | 2026-07-15 | Metro operations dashboard | Shares monitoring presentation; Transit Pulse models explicit headway/capacity tradeoffs rather than predictions. |
+| [frontend720/the-dispatcher](https://github.com/frontend720/the-dispatcher) | 0 | 2025-12-06 | Live GTFS-RT dispatch game | Depends on live data; Transit Pulse is deterministic and reproducible without a network. |
+| [frontend720/GridPulse](https://github.com/frontend720/GridPulse) | 0 | 2025-11-10 | City sandbox with transit data | Wider city-builder scope; Transit Pulse deliberately narrows to route reliability experiments. |
+| [3fon3fonov/exostriker](https://github.com/3fon3fonov/exostriker) | 133 | 2026-07-12 | Astronomical transit simulation | Search-term collision only; no public-transport feature overlap. |
+
+## Decision
+
+No same-name, highly isomorphic active project was found in this public-repository sample. To remain clearly differentiated, Transit Pulse Sandbox is intentionally limited to a transparent discrete-event single-line model, synthetic bundled data, fixed seeds, local import validation, and side-by-side headway experiments. It is not a real-time dispatch product, a full assignment engine, or a real-agency data service.
