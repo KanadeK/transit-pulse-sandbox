@@ -1,5 +1,10 @@
 name: Security
-on: { push: { branches: [main] }, pull_request: {}, schedule: [{ cron: '17 3 * * 1' }] }
+on:
+  {
+    push: { branches: [main] },
+    pull_request: {},
+    schedule: [{ cron: "17 3 * * 1" }],
+  }
 permissions: { contents: read }
 jobs:
   audit:

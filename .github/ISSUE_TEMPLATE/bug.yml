@@ -2,5 +2,9 @@ name: Bug report
 description: Report a reproducible problem
 body:
   - type: textarea
-    attributes: { label: Reproduction, description: Include input and expected versus actual result. }
+    attributes:
+      {
+        label: Reproduction,
+        description: Include input and expected versus actual result.,
+      }
     validations: { required: true }

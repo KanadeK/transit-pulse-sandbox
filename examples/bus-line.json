@@ -1,11 +1,52 @@
 {
-  "id": "harbor-loop", "name": "Harbor Loop (synthetic)", "mode": "bus", "capacity": 42, "distanceKm": 9.4, "travelMinutesBetweenStops": 4,
+  "id": "harbor-loop",
+  "name": "Harbor Loop (synthetic)",
+  "mode": "bus",
+  "capacity": 42,
+  "distanceKm": 9.4,
+  "travelMinutesBetweenStops": 4,
   "stops": [
-    { "id": "b1", "name": "Market", "x": 121.47, "y": 31.23, "demandPerHour": 50 },
-    { "id": "b2", "name": "Library", "x": 121.475, "y": 31.232, "demandPerHour": 82 },
-    { "id": "b3", "name": "Canal", "x": 121.48, "y": 31.234, "demandPerHour": 68 },
-    { "id": "b4", "name": "Foundry", "x": 121.485, "y": 31.236, "demandPerHour": 92 },
-    { "id": "b5", "name": "Harbor", "x": 121.49, "y": 31.238, "demandPerHour": 76 },
-    { "id": "b6", "name": "Museum", "x": 121.495, "y": 31.24, "demandPerHour": 48 }
+    {
+      "id": "b1",
+      "name": "Market",
+      "x": 121.47,
+      "y": 31.23,
+      "demandPerHour": 50
+    },
+    {
+      "id": "b2",
+      "name": "Library",
+      "x": 121.475,
+      "y": 31.232,
+      "demandPerHour": 82
+    },
+    {
+      "id": "b3",
+      "name": "Canal",
+      "x": 121.48,
+      "y": 31.234,
+      "demandPerHour": 68
+    },
+    {
+      "id": "b4",
+      "name": "Foundry",
+      "x": 121.485,
+      "y": 31.236,
+      "demandPerHour": 92
+    },
+    {
+      "id": "b5",
+      "name": "Harbor",
+      "x": 121.49,
+      "y": 31.238,
+      "demandPerHour": 76
+    },
+    {
+      "id": "b6",
+      "name": "Museum",
+      "x": 121.495,
+      "y": 31.24,
+      "demandPerHour": 48
+    }
   ]
 }

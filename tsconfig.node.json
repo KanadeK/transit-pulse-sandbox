@@ -1,1 +1,4 @@
-{ "extends": "./tsconfig.json", "include": ["vite.config.ts", "playwright.config.ts", "scripts"] }
+{
+  "extends": "./tsconfig.json",
+  "include": ["vite.config.ts", "playwright.config.ts", "scripts"]
+}
