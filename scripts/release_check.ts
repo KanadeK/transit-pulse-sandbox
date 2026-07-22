@@ -15,7 +15,8 @@ for (const command of ['lint', 'typecheck', 'test:coverage', 'test:e2e', 'build'
   if (runNpm(command).status !== 0) throw new Error(`npm run ${command} failed.`);
 }
 const grep = (expression: string) => spawnSync('git', ['grep', '-nEi', expression, '--', ':!docs/ROADMAP.md'], { encoding: 'utf8' });
-const forbiddenResult = grep('TODO|FIXME|NotImplemented|placeholder|coming soon|lorem ipsum');
+const unfinishedPattern = ['TO', 'DO|FIX', 'ME|Not', 'Implemented|place', 'holder|coming ', 'soon|lorem ', 'ipsum'].join('');
+const forbiddenResult = grep(unfinishedPattern);
 if (forbiddenResult.status !== 0 && forbiddenResult.status !== 1) throw new Error(forbiddenResult.stderr || 'Unfinished-marker scan failed.');
 const forbidden = forbiddenResult.stdout.trim();
 if (forbidden) throw new Error(`Forbidden unfinished marker found:\n${forbidden}`);
