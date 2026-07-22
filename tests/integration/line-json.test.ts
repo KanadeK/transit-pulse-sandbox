@@ -6,7 +6,7 @@ import { simulate } from '../../src/core/simulation';
 
 describe('line JSON adapter', () => {
   it('loads the committed 12-stop fixture into the real simulation', async () => {
-    const text = await readFile(new URL('../../examples/rail-line.json', import.meta.url), 'utf8');
+    const text = await readFile('examples/rail-line.json', 'utf8');
     const line = parseLineJson(text);
     const result = simulate(line, defaultConfig(line));
     expect(line.stops).toHaveLength(12);
